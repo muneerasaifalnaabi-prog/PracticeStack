@@ -5,7 +5,7 @@ public class EmployeeStackSearch {
         //create new stack
 
         Stack<String> employeeStackSearch = new Stack<>();
-
+        // add elements in Stack using push
         employeeStackSearch.push("Ishaq");
         employeeStackSearch.push("Fatima");
         employeeStackSearch.push("Ahmed");
