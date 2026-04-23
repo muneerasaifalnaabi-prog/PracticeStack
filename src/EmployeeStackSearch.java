@@ -23,8 +23,7 @@ public class EmployeeStackSearch {
             //Display all elements using for loop
         System.out.println("Use for loop to display all employees ");
         for (int i=0;i<employeeStackSearch.size();i++) {
-            System.out.println("all employees with position :" + i + ": " + employeeStackSearch[i]);
-        }
+            System.out.println("  Position " + i + ": " + employeeStackSearch.get(i));
         //Display all element using for each loop
         System.out.println("Use for each loop to display all employees ");
 
