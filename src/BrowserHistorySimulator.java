@@ -6,6 +6,7 @@ public class BrowserHistorySimulator {
         Stack<String> browserHistorySimulator = new Stack<>();
         // add elements in Stack using push
         browserHistorySimulator.push("https://www.github.com");
+        browserHistorySimulator.push("https://www.google.com");
 
 
 
