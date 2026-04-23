@@ -26,7 +26,9 @@ public class EmployeeStackSearch {
 
         System.out.println("Use for each loop to display all employees ");
 
-        for (String name:employeeStackSearch)
+        for (String name:employeeStackSearch){
+            System.out.println();
+        }
 
 
 
