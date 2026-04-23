@@ -15,6 +15,9 @@ public class EmployeeStackSearch {
 
         System.out.println("All Employees :" + employeeStackSearch);
 
+        employeeStackSearch.search(2);
+
+
 
 
 
