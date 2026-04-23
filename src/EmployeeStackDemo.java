@@ -15,7 +15,7 @@ public class EmployeeStackDemo {
         System.out.println("All Employee :" + employeeStack);
             // add one more element to stack
         employeeStack.push("Abdullah");
-
+//display all elements in stack after added one more
         System.out.println("All Employees after added employee");
 
 
