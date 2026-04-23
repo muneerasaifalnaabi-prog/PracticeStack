@@ -31,6 +31,7 @@ public class EmployeeStackSearch {
             System.out.println("All employees :" +employeeStackSearch);
 
         }
+         //traverse all element
         System.out.println("Use an Iterator to traverse the  employees");
 
         for (int i=employeeStackSearch.size();i>=0;i--) {
