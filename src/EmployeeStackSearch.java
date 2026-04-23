@@ -32,7 +32,10 @@ public class EmployeeStackSearch {
         }
         System.out.println("Use an Iterator to traverse the  employees");
 
-        for (int i=0;i<employeeStackSearch.size();i++) {
+        for (int i=employeeStackSearch.size();i>=0;i--) {
+
+            System.out.println("all traverse employees with position :" + i + ": " + employeeStackSearch);
+        }
 
 
 
