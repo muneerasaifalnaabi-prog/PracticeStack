@@ -14,6 +14,8 @@ public class EmployeeStackDemo {
 
         employeeStack.push("Abdullah");
 
+        System.out.println("All Employees after added employee");
+
 
 
 
