@@ -19,8 +19,10 @@ public class BrowserHistorySimulator {
 
 // Displayed element after pop
         System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
+//peek the to element
+        System.out.println("peek the top URL:" +browserHistorySimulator);
 
-        System.out.println("peek the top employee:" +browserHistorySimulator);
+
 
 
 
