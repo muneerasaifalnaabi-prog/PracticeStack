@@ -4,12 +4,15 @@ public class ParenthesesValidator {
     public static void main(String[] args) {
         //create stack
         Stack<String > parenthesesValidator = new Stack<>();
+        // add elements in Stack using push
 
         parenthesesValidator.push("{hello})");
         parenthesesValidator.push("[hi])");
         parenthesesValidator.push("(java){]");
         parenthesesValidator.push("{(programming");
         parenthesesValidator.push("{{Muneera}}");
+
+
 
 
 
