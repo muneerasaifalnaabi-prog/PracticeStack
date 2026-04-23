@@ -10,6 +10,8 @@ public class EmployeeStackSearch {
         employeeStack.push("Ahmed");
         employeeStack.push("Fatima");
         employeeStack.push("Muhammad");
+        employeeStack.push("Riham");
+
 
 
 
