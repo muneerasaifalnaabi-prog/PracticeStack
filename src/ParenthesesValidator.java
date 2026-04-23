@@ -5,6 +5,17 @@ public class ParenthesesValidator {
         //create stack
         Stack<String > parenthesesValidator = new Stack<>();
 
+        parenthesesValidator.push("{hello})");
+        parenthesesValidator.push("[hi])");
+        parenthesesValidator.push("(java){]");
+        parenthesesValidator.push("{(programming");
+        parenthesesValidator.push("{{Muneera}}");
+
+
+
+
+
+
 
     }
 
