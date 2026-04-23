@@ -13,6 +13,8 @@ public class EmployeeStackSearch {
         employeeStackSearch.push("Riham");
         employeeStackSearch.push("Rana");
 
+        System.out.println("All Employees :" + employeeStackSearch);
+
 
 
 
