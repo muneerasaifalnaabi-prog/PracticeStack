@@ -13,8 +13,10 @@ public class BrowserHistorySimulator {
             //display all element
         System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
 
-        System.out.println("Back");
+        System.out.println("Back 2 ");
         System.out.println(browserHistorySimulator.pop());
+        System.out.println(browserHistorySimulator.pop());
+
 
 
 
