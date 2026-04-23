@@ -20,6 +20,26 @@ public class ParenthesesValidator {
 
 
 
+
+
+    }
+    public static  Boolean  isBalanced(String expression){
+        Stack<String > parenthesesValidator = new Stack<>();
+        for (int i=0;i<parenthesesValidator.size();i++){
+            char c=expression.charAt(i);
+            if (parenthesesValidator.isEmpty()){
+                return false;
+            }
+            if (c=='{' || c=='(' || c=='{'){
+                parenthesesValidator.push(String.valueOf(c));
+            }
+            if (c=='}' || c==')' || c=='}'){
+                parenthesesValidator.push(String.valueOf(c));
+            }
+
+
+
+        }
     }
 
 }
