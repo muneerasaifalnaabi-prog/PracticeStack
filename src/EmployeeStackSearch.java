@@ -17,7 +17,7 @@ public class EmployeeStackSearch {
         System.out.println("All Employees :" + employeeStackSearch);
             //search for exit element using search
         employeeStackSearch.search(2);
-
+          //Check if element exit in  Stack
         System.out.println("If employee Fatima exit ? "+ employeeStackSearch.contains("Fatima"));
 
         System.out.println("Use for loop to display all employees ");
