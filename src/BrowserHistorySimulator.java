@@ -7,6 +7,10 @@ public class BrowserHistorySimulator {
         // add elements in Stack using push
         browserHistorySimulator.push("https://www.github.com");
         browserHistorySimulator.push("https://www.google.com");
+        browserHistorySimulator.push("https://www.youtube.com");
+        browserHistorySimulator.push("https://www.Linkedin.com");
+        browserHistorySimulator.push("https://www.Instgram.com");
+
 
 
 
