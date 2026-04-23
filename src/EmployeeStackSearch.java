@@ -30,7 +30,7 @@ public class EmployeeStackSearch {
             System.out.println("All employees :" +employeeStackSearch);
 
         }
-        System.out.println("Use an Iterator to traverse the  employees ");
+        System.out.println("Use an Iterator to traverse the  employees");
 
 
 
