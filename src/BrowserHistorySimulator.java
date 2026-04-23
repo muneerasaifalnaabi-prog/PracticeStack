@@ -12,10 +12,15 @@ public class BrowserHistorySimulator {
         browserHistorySimulator.push("https://www.Instgram.com");
             //display all element
         System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
-
+            //using pop to back
         System.out.println("Back 2 ");
         System.out.println(browserHistorySimulator.pop());
         System.out.println(browserHistorySimulator.pop());
+
+
+        System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
+
+
 
 
 
