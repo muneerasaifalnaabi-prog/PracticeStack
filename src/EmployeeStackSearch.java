@@ -11,6 +11,7 @@ public class EmployeeStackSearch {
         employeeStackSearch.push("Fatima");
         employeeStackSearch.push("Muhammad");
         employeeStackSearch.push("Riham");
+        employeeStackSearch.push("Rana");
 
 
 
