@@ -34,10 +34,11 @@ public class EmployeeStackSearch {
          //traverse all element
         System.out.println("Use an Iterator to traverse the  employees");
 
-        for (int i=employeeStackSearch.size();i>=0;i--) {
-
-            System.out.println("all traverse employees with position :" + i + ": " + employeeStackSearch);
+            for (int j = employeeStackSearch.size() - 1; j >= 0; j--) {
+            System.out.println("  Position " + j + ": " + employeeStackSearch.get(j));
         }
+
+
 
 
 
