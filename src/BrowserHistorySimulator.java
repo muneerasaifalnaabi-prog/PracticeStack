@@ -11,6 +11,10 @@ public class BrowserHistorySimulator {
         browserHistorySimulator.push("https://www.Linkedin.com");
         browserHistorySimulator.push("https://www.Instgram.com");
 
+        System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
+
+
+
 
 
 
