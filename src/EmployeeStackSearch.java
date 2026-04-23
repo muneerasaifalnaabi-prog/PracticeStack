@@ -6,6 +6,7 @@ public class EmployeeStackSearch {
         Stack<String> employeeStackSearch = new Stack<>();
 
         employeeStackSearch.push("Ishaq");
+        employeeStack.push("Fatima");
 
 
     }
