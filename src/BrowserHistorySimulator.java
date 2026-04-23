@@ -26,6 +26,12 @@ public class BrowserHistorySimulator {
 
         System.out.println("Is empty? "+ browserHistorySimulator.isEmpty());
 
+        browserHistorySimulator.push("https://www.github.com");
+        browserHistorySimulator.push("https://www.google.com");
+
+
+
+
 
 
 
