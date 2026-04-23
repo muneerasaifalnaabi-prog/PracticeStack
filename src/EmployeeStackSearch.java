@@ -19,7 +19,7 @@ public class EmployeeStackSearch {
         employeeStackSearch.search(2);
           //Check if element exit in  Stack
         System.out.println("If employee Fatima exit ? "+ employeeStackSearch.contains("Fatima"));
-
+            //Display all elements using for loop
         System.out.println("Use for loop to display all employees ");
         for (int i=0;i<employeeStackSearch.size();i++) {
             System.out.println("all employees with position :" + i + ": " + employeeStackSearch);
