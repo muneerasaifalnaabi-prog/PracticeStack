@@ -17,8 +17,12 @@ public class BrowserHistorySimulator {
         System.out.println(browserHistorySimulator.pop());
         System.out.println(browserHistorySimulator.pop());
 
-
+// Displayed element after pop
         System.out.println("Display the current page and all pages in history after each visit :" +browserHistorySimulator);
+
+        System.out.println("peek the top employee:" +browserHistorySimulator);
+
+
 
 
 
