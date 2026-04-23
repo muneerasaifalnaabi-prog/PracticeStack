@@ -10,6 +10,9 @@ public class EmployeeStackDemo {
         employeeStack.push("Muhammad");
         employeeStack.push("Riham");
 
+        System.out.println("All Employee :" + employeeStack);
+
+
 
 
 
