@@ -6,6 +6,7 @@ public class EmployeeStackDemo {
 
         employeeStack.push("Ishaq");
         employeeStack.push("Fatima");
+        employeeStack.push("Ahmed");
 
 
 
