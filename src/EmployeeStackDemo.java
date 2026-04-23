@@ -13,7 +13,7 @@ public class EmployeeStackDemo {
         //display all element in the stack
 
         System.out.println("All Employee :" + employeeStack);
-
+            // add one more element to stack
         employeeStack.push("Abdullah");
 
         System.out.println("All Employees after added employee");
