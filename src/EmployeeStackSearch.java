@@ -8,6 +8,8 @@ public class EmployeeStackSearch {
         employeeStackSearch.push("Ishaq");
         employeeStack.push("Fatima");
         employeeStack.push("Ahmed");
+        employeeStack.push("Fatima");
+
 
 
     }
