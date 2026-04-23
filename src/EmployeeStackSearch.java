@@ -15,10 +15,6 @@ public class EmployeeStackSearch {
 
         System.out.println("All Employees :" + employeeStackSearch);
 
-        for (String name :employeeStackSearch){
-
-        }
-
 
 
 
