@@ -13,7 +13,7 @@ public class EmployeeStackSearch {
         employeeStackSearch.push("Muhammad");
         employeeStackSearch.push("Riham");
         employeeStackSearch.push("Rana");
-
+            //Display all employee
         System.out.println("All Employees :" + employeeStackSearch);
 
         employeeStackSearch.search(2);
