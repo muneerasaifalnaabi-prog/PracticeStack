@@ -22,6 +22,12 @@ public class BrowserHistorySimulator {
 //peek the to element
         System.out.println("peek the top URL:" +browserHistorySimulator);
 
+        // Check if the history is empty at different points
+
+        System.out.println("Is empty? "+ browserHistorySimulator.isEmpty());
+
+
+
 
 
 
