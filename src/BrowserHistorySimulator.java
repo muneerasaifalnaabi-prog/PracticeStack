@@ -26,8 +26,8 @@ public class BrowserHistorySimulator {
 
         System.out.println("Is empty? "+ browserHistorySimulator.isEmpty());
         //added new element
-        browserHistorySimulator.push("https://www.github.com");
-        browserHistorySimulator.push("https://www.google.com");
+        browserHistorySimulator.push("https://www.anthrophic.com");
+        browserHistorySimulator.push("https://www.z.ai");
 
         //display all element
         System.out.println(browserHistorySimulator);
