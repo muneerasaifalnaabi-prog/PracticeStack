@@ -10,6 +10,7 @@ public class EmployeeStackDemo {
         employeeStack.push("Ahmed");
         employeeStack.push("Muhammad");
         employeeStack.push("Riham");
+        //display all element in the stack
 
         System.out.println("All Employee :" + employeeStack);
 
