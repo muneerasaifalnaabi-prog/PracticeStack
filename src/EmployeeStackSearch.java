@@ -28,7 +28,9 @@ public class EmployeeStackSearch {
 
         for (String name:employeeStackSearch){
             System.out.println("All employees :" +employeeStackSearch);
+
         }
+        System.out.println("Use an Iterator to traverse the  employees ");
 
 
 
