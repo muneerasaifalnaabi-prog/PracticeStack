@@ -24,6 +24,8 @@ public class EmployeeStackSearch {
             System.out.println("all employees with position :" + i + ": " + employeeStackSearch);
         }
 
+        System.out.println("Use for each loop to display all employees ");
+
 
 
 
