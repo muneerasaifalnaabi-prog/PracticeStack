@@ -20,6 +20,7 @@ public class EmployeeStackSearch {
         System.out.println("If employee Fatima exit ? "+ employeeStackSearch.contains("Fatima"));
 
         for (int i=0;i<employeeStackSearch.size();i++){
+            System.out.println("all employees with position :"+ i+ ": " + employeeStackSearch);
 
         }
 
