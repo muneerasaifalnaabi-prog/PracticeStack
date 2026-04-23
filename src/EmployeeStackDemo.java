@@ -5,6 +5,9 @@ public class EmployeeStackDemo {
         Stack<String> employeeStack =new Stack<>();
 
         employeeStack.push("Ishaq");
+        employeeStack.push("Fatima");
+
+
 
 
 
