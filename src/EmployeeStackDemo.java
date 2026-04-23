@@ -4,7 +4,7 @@ public class EmployeeStackDemo {
     public static void main(String[] args) {
         //Create a Stack
         Stack<String> employeeStack =new Stack<>();
-
+//push 5 element to stack
         employeeStack.push("Ishaq");
         employeeStack.push("Fatima");
         employeeStack.push("Ahmed");
