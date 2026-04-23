@@ -36,9 +36,11 @@ public class ParenthesesValidator {
             if (c=='}' || c==')' || c=='}'){
                 parenthesesValidator.push(String.valueOf(c));
             }
-            String pop=parenthesesValidator.pop();
-            if (pop)
-
+            char pop=parenthesesValidator.pop();
+            if ((c == ')' && pop != '(') ||
+                    (c == '}' && pop != '{') ||
+                    (c == ']' && pop != '[')) {
+                return false;
 
 
 
