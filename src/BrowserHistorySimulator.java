@@ -25,9 +25,12 @@ public class BrowserHistorySimulator {
         // Check if the history is empty at different points
 
         System.out.println("Is empty? "+ browserHistorySimulator.isEmpty());
-
+        //added new element
         browserHistorySimulator.push("https://www.github.com");
         browserHistorySimulator.push("https://www.google.com");
+
+        //display all element
+        System.out.println(browserHistorySimulator);
 
 
 
