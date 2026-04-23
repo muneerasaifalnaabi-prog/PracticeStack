@@ -16,13 +16,14 @@ public class EmployeeStackSearch {
             //Display all employee
         System.out.println("All Employees :" + employeeStackSearch);
             //search for exit element using search
-        employeeStackSearch.search(2);
+        int searchResult = employeeStackSearch.search("Ahmed"); // search by name
+        System.out.println("Position of Ahmed from top: " + searchResult);
           //Check if element exit in  Stack
         System.out.println("If employee Fatima exit ? "+ employeeStackSearch.contains("Fatima"));
             //Display all elements using for loop
         System.out.println("Use for loop to display all employees ");
         for (int i=0;i<employeeStackSearch.size();i++) {
-            System.out.println("all employees with position :" + i + ": " + employeeStackSearch);
+            System.out.println("all employees with position :" + i + ": " + employeeStackSearch[i]);
         }
         //Display all element using for each loop
         System.out.println("Use for each loop to display all employees ");
