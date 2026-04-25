@@ -30,6 +30,9 @@ public class StringReversalAndPalindrome {
         return result;
     }
     public static Boolean isPalindrome(String s) {
+        //ignore sensetive case with space
+        s=s.toLowerCase().trim();
+
         int left = 0;
         int right = s.length() - 1;
         while (left < right) {
