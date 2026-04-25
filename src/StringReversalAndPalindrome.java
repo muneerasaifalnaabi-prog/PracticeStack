@@ -5,5 +5,11 @@ public class StringReversalAndPalindrome {
         //create Stack Store characther
         Stack<Character> stack = new Stack<>();
 
+
+    }
+    public static String reverseString(String s) {
+        Stack<Character> stack = new Stack<>();
+
+
     }
 }
