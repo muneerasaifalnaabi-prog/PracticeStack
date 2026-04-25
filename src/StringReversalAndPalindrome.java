@@ -40,6 +40,7 @@ public class StringReversalAndPalindrome {
             stack.push(s.charAt(i));
 
         }
+        //added pushed charachter to result ..reversed string
         for (int i = 0; i < s.length(); i++) {
             result += stack.pop();
         }
@@ -49,6 +50,7 @@ public class StringReversalAndPalindrome {
     public static Boolean isPalindrome(String s) {
         //ignore sensetive case with space
         s=s.toLowerCase().trim();
+        //check if isPalindrome
 
         int left = 0;
         int right = s.length() - 1;
