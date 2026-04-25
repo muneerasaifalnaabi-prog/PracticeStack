@@ -1,7 +1,19 @@
 import java.util.Stack;
+/*
 
+
+==============================
+It need to check :
+=============================
+
+ */
 public class DecimalToBinaryConverter {
     public static void main(String[] args) {
+        int num =10;
+        System.out.println(decimalToBinary(num));
+
+       // displayConversionProcess(num);
+
 
     }
     public static String decimalToBinary(int num) {
@@ -10,12 +22,11 @@ public class DecimalToBinaryConverter {
         if (num == 0) {
             return "0";
         }
-        while (num != 0) {
-            stack.push(num%2);
+        while (num > 0) {
+           int reminder =num%2;
+           stack.push(reminder);
                 num = num / 2;
-                if (num<0) {
-                    num = num*-1;
-                }
+
         }
         for (int i = 0; i < stack.size(); i++) {
             binary = binary + stack.pop();
@@ -24,6 +35,20 @@ public class DecimalToBinaryConverter {
 
     }
     public static void displayConversionProcess(int num) {
+        if (num == 0) {
+            System.out.println("Special case"+num);
+            return;
+        }
+        Stack<Integer> stack = new Stack<>();
+        System.out.println("Conversion process step for "+num+":");
+        while (num != 0) {
+            System.out.println("Reminder :"+ stack.push(num%2));
+            System.out.println("Quotient :"+ num/2);
+            if (num<0) {
+                num = num*-1;
+            }
+        }
+
 
     }
 }
