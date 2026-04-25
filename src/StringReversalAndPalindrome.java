@@ -35,6 +35,7 @@ public class StringReversalAndPalindrome {
         if (s.length() == 1) return s;
         if (s==null) return null;
         String result = "";
+        //push characther from sting s
         for (int i = 0; i < s.length(); i++) {
             stack.push(s.charAt(i));
 
