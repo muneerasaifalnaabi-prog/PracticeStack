@@ -2,7 +2,9 @@ import java.util.Stack;
 
 public class StringReversalAndPalindrome {
     public static void main(String[] args) {
+
         Stack<Character> stack = new Stack<>();
+        //Create 6 String element
         String s1="mom";
         String s2="";
         String s3="s";
