@@ -2,15 +2,27 @@ import java.util.Stack;
 
 public class StringReversalAndPalindrome {
     public static void main(String[] args) {
+        Stack<Character> stack = new Stack<>();
         String s1="mom";
         String s2="";
         String s3="s";
         String s4="hello";
         String s5="level";
         String s6="java";
-        System.out.println("Original String :"+s3);
-        System.out.println("Reverse String :"+reverseString(s3));
-        System.out.println(isPalindrome(s3));
+        System.out.println("Original String :"+s4);
+        System.out.println("Reverse String :"+reverseString(s4));
+        System.out.println(isPalindrome(s4));
+        //Show stack procces :
+        for (int i = 0; i<s1.length(); i++) {
+            stack.push(s1.charAt(i));
+            System.out.println("pushed "+s1.charAt(i)+" to stack");
+        }
+        for (int i = 0; i<s1.length(); i++) {
+            stack.pop();
+            System.out.println("poped "+s1.charAt(i)+" from stack");
+
+        }
+
 
     }
     public static String reverseString(String s) {
