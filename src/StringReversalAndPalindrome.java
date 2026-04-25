@@ -11,6 +11,7 @@ public class StringReversalAndPalindrome {
         String s4="hello";
         String s5="level";
         String s6="java";
+        //test case for s4
         System.out.println("Original String :"+s4);
         System.out.println("Reverse String :"+reverseString(s4));
         System.out.println(isPalindrome(s4));
