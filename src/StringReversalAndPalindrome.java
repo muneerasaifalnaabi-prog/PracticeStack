@@ -9,7 +9,15 @@ public class StringReversalAndPalindrome {
     }
     public static String reverseString(String s) {
         Stack<Character> stack = new Stack<>();
+        String result = "";
+        for (int i = 0; i < s.length(); i++) {
+            stack.push(s.charAt(i));
+            result += stack.peek();
+            stack.pop();
 
+        }
 
+       result += stack.peek();
+        return result;
     }
 }
