@@ -30,6 +30,7 @@ public class StringReversalAndPalindrome {
     }
     public static String reverseString(String s) {
         Stack<Character> stack = new Stack<>();
+        //check if empty or null or length ==1
         if (s.length() == 0) return "";
         if (s.length() == 1) return s;
         if (s==null) return null;
