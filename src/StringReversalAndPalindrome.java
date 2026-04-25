@@ -3,8 +3,8 @@ import java.util.Stack;
 public class StringReversalAndPalindrome {
     public static void main(String[] args) {
         String s1="mom";
-        String s2="dad";
-        String s3="abcd";
+        String s2="";
+        String s3="s";
         String s4="hello";
         String s5="level";
         String s6="java";
@@ -15,6 +15,9 @@ public class StringReversalAndPalindrome {
     }
     public static String reverseString(String s) {
         Stack<Character> stack = new Stack<>();
+        if (s.length() == 0) return "";
+        if (s.length() == 1) return s;
+        if (s==null) return null;
         String result = "";
         for (int i = 0; i < s.length(); i++) {
             stack.push(s.charAt(i));
