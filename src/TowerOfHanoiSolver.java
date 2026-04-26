@@ -21,5 +21,8 @@ public class TowerOfHanoiSolver {
         System.out.println("Initlized "+numDisks +"on peg A");
 
     }
+    public static void moveDisk(char fromPeg, char toPeg) {
+
+    }
 
 }
