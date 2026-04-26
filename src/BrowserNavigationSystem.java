@@ -38,8 +38,7 @@ public class BrowserNavigationSystem {
         currentPage = back.pop();
         System.out.println("Go Back  : " + currentPage);
 
-
-
-
     }
+    //// go forward to next page
+
 }
