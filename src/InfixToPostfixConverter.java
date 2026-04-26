@@ -2,6 +2,9 @@ import java.util.Stack;
 
 public class InfixToPostfixConverter {
     public static void main(String[] args) {
+        String e1 = "3 + 4";
+        String e2 = "3 + 4 * 2";
+        String e3 = "( 3 + 4 ) * 2";
 
 
     }
