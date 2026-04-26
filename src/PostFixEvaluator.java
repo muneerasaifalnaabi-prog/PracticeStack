@@ -2,13 +2,15 @@ import java.util.Stack;
 
 public class PostFixEvaluator {
     public static void main(String[] args) {
+
+        //expression
         String e1 = "3 4 +";
         String e2 = "5 1 2 + 4 * +";
         String e3 = "55+54";
         String e4 = "6 3 -";
         String e5 = "7 2 %";
         String e6 = "2 3 * 4 +";
-
+            //show result
         System.out.println("result :");
         System.out.println(evaluatePostfix(e1));
         System.out.println(evaluatePostfix(e2));
@@ -28,7 +30,7 @@ public class PostFixEvaluator {
         }
 
 
-
+                //push operator in stack
         for (int i = 0; i < expression.length(); i++) {
             char c = expression.charAt(i);
 
@@ -46,10 +48,10 @@ public class PostFixEvaluator {
                     System.out.println("Invalid expression");
                     return null;
                 }
-
+                    //pop operand
                 int operand1 = stack.pop();
                 int operand2 = stack.pop();
-
+                //  use multiple operator
                 switch (c) {
                     case '+':
                         stack.push(operand2 + operand1);
