@@ -4,11 +4,13 @@ import java.util.Stack;
 public class DecimalToBinaryConverter {
 
     public static void main(String[] args) {
-        //int num = 5;
+        int num = 5;
        // System.out.println(decimalToBinary(num));
        // displayConversionProcess(num);
         String binary ="1011";
         System.out.println(binaryToDesimal(binary));
+
+        System.out.println("Built-in Verify : " + Integer.toBinaryString(num));
     }
 
     public static String decimalToBinary(int num) {
