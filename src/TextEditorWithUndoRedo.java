@@ -39,7 +39,7 @@ public class TextEditorWithUndoRedo {
             System.out.println("Undo limited reached");
             undo.remove(0);
         }
-        undo.push(text);
+        undo.push(currentState);
         currentState+=text;
         redo.clear();
         System.out.println("Typed :" +text );
