@@ -35,8 +35,7 @@ public class PostFixEvaluator {
                 }
             }
         }
-
-
+        return stack.pop();
 
     }
 }
