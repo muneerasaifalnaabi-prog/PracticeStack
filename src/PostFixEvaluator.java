@@ -7,7 +7,13 @@ public class PostFixEvaluator {
     }
     public static Integer evaluatePostfix(String expression){
         Stack<Integer> stack=new Stack<>();
-        for ()
+        for (int i=0 ;i<expression.length();i++){
+            char c =expression.charAt(i);
+
+            if (Character.isDigit(c)){
+                stack.push(Integer.parseInt(c));
+            }
+        }
 
 
 
