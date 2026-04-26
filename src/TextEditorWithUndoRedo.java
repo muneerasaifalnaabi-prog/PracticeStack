@@ -18,6 +18,9 @@ public class TextEditorWithUndoRedo {
         }
         undo.push(text);
         currentState+=text;
+        redo.clear();
+        System.out.println("Typed :" +text );
+
 
 
     }

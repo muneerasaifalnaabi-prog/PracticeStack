@@ -5,9 +5,9 @@ public class DecimalToBinaryConverter {
 
     public static void main(String[] args) {
         int num = 5;
-       // System.out.println(decimalToBinary(num));
+      //  System.out.println(decimalToBinary(num));
        // displayConversionProcess(num);
-        String binary ="1011";
+        String binary ="101110001";
         System.out.println(binaryToDesimal(binary));
 
         System.out.println("Built-in Verify : " + Integer.toBinaryString(num));
@@ -20,11 +20,11 @@ public class DecimalToBinaryConverter {
         if (num == 0) {
             return "0";
         }
-
+            //10
         while (num > 0) {
-            int reminder = num % 2;
-            stack.push(reminder);
-            num = num / 2;
+            int reminder = num % 2;//0 //1 //1
+            stack.push(reminder);//0 //1 //0 //1
+            num = num / 2;//5 //2.5
         }
 
 
@@ -56,7 +56,7 @@ public class DecimalToBinaryConverter {
         }
     }
         public static Integer binaryToDesimal(String binary){
-        Stack<Integer> stack =new Stack<>();
+        Stack<Integer> stack =new Stack<>();//101
         for (int i=0;i<binary.length();i++){
             stack.push(Character.getNumericValue(binary.charAt(i)));
         }
