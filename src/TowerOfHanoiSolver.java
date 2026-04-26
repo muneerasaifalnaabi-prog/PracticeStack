@@ -10,6 +10,16 @@ public class TowerOfHanoiSolver {
 
     }
     public static void initializePegs(int numDisks) {
+        pegA.clear();
+        pegB.clear();
+        pegC.clear();
+        count = 0;
+        //push disck from largest to smallest
+        for (int i=numDisks;i>=1;i--){
+            pegA.push(i);
+        }
+        System.out.println("Initlized "+numDisks +"on peg A");
 
     }
+
 }
