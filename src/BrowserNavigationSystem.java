@@ -7,7 +7,12 @@ public class BrowserNavigationSystem {
     static int  max=10;
     public static void main(String[] args) {
 
-        visitPage("Codline");
+        visitPage("Codline.om");
+        visitPage("linkedIn.com");
+        visitPage("gitHub.com");
+
+        goBack();
+        goBack();
 
 
     }
