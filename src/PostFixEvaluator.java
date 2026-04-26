@@ -11,7 +11,28 @@ public class PostFixEvaluator {
             char c =expression.charAt(i);
 
             if (Character.isDigit(c)){
-                stack.push(Integer.parseInt(c));
+                stack.push(Character.getNumericValue(c));
+            }
+            else {
+                int operand1 =stack.pop();
+                int operand2 =stack.pop();
+
+                switch (c){
+                    case '+':
+                        stack.push(operand1+operand2);
+                        break;
+                    case '-':
+                        stack.push(operand1-operand2);
+                        break;
+                    case '*':
+                        stack.push(operand1*operand2);
+                        break;
+                    case '/':
+                        stack.push(operand1*operand2);
+                        break;
+
+
+                }
             }
         }
 
