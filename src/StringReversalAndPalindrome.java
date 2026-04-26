@@ -15,43 +15,39 @@ public class StringReversalAndPalindrome {
         System.out.println("Original String :"+s4);
         System.out.println("Reverse String :"+reverseString(s4));
         System.out.println(isPalindrome(s4));
-        //Show stack procces :
+        //Show stack process :
         for (int i = 0; i<s1.length(); i++) {
             stack.push(s1.charAt(i));
             System.out.println("pushed "+s1.charAt(i)+" to stack");
         }
         for (int i = 0; i<s1.length(); i++) {
-            stack.pop();
-            System.out.println("poped "+s1.charAt(i)+" from stack");
-
+            char popped = stack.pop();
+            System.out.println("popped "+popped+" from stack");
         }
-
-
     }
+
     public static String reverseString(String s) {
         Stack<Character> stack = new Stack<>();
         //check if empty or null or length ==1
+        if (s == null) return null;
         if (s.length() == 0) return "";
         if (s.length() == 1) return s;
-        if (s==null) return null;
         String result = "";
-        //push characther from sting s
+        //push character from string s
         for (int i = 0; i < s.length(); i++) {
             stack.push(s.charAt(i));
-
         }
-        //added pushed charachter to result ..reversed string
+        //added pushed character to result ..reversed string
         for (int i = 0; i < s.length(); i++) {
             result += stack.pop();
         }
-
         return result;
     }
+
     public static Boolean isPalindrome(String s) {
-        //ignore sensetive case with space
+        //ignore sensitive case with space
         s=s.toLowerCase().trim();
         //check if isPalindrome
-
         int left = 0;
         int right = s.length() - 1;
         while (left < right) {
