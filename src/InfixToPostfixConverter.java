@@ -13,10 +13,20 @@ public class InfixToPostfixConverter {
             System.out.println("Empty Expression ");
             return null;
         }
+        //loop through each character
         for (int i=0;i<infix.length();i++){
             char c =infix.charAt(i);
 
-            if (c==' ')
+            if (c==' '){
+                continue;;
+            }
+            if (Character.isDigit(c)){
+                postfix+=c +"";
+            }
+            else if (c=='('){
+                stack.push(c);
+
+            }
         }
 
 
