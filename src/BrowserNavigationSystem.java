@@ -28,4 +28,7 @@ public class BrowserNavigationSystem {
 
 
     }
+    public static void goBack(){
+
+    }
 }
