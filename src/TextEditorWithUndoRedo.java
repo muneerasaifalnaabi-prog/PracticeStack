@@ -3,4 +3,8 @@ public class TextEditorWithUndoRedo {
 
 
     }
+    public  static String type(String text ){
+
+    }
+
 }
