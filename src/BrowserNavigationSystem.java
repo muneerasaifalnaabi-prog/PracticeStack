@@ -29,6 +29,8 @@ public class BrowserNavigationSystem {
 
     }
     public static void goBack(){
+        // edge case: nothing to go back to
+
 
     }
 }
