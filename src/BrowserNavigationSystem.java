@@ -20,6 +20,7 @@ public class BrowserNavigationSystem {
             back.push(currentPage);
 
         }
+        //clear forwared stack when visiting new pages
         farwared.clear();
     }
 }
