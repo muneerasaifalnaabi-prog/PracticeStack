@@ -2,61 +2,81 @@ import java.util.Stack;
 
 public class PostFixEvaluator {
     public static void main(String[] args) {
+        String e1 = "3 4 +";
+        String e2 = "5 1 2 + 4 * +";
+        String e3 = "55+54";
+        String e4 = "6 3 -";
+        String e5 = "7 2 %";
+        String e6 = "2 3 * 4 +";
 
-
+        System.out.println("result :");
+        System.out.println(evaluatePostfix(e1));
+        System.out.println(evaluatePostfix(e2));
+        System.out.println(evaluatePostfix(e3));
+        System.out.println(evaluatePostfix(e4));
+        System.out.println(evaluatePostfix(e5));
+        System.out.println(evaluatePostfix(e6));
     }
-    public static Integer evaluatePostfix(String expression){
-        Stack<Integer> stack=new Stack<>();
-        //Edge Case
+
+    public static Integer evaluatePostfix(String expression) {
+        Stack<Integer> stack = new Stack<>();
+
+        // Edge case: empty or null
         if (expression == null || expression.isEmpty()) {
             System.out.println("Empty expression");
             return null;
         }
-        if (stack.size() < 2) {
-            System.out.println("Invalid expression");
-            return null;
-        }
-        for (int i=0 ;i<expression.length();i++){
-            char c =expression.charAt(i);
 
-            if (Character.isDigit(c)){
-                stack.push(Character.getNumericValue(c));
+
+
+        for (int i = 0; i < expression.length(); i++) {
+            char c = expression.charAt(i);
+
+
+            if (c == ' ') {
+                continue;
             }
-            else {
-                int operand1 =stack.pop();
-                int operand2 =stack.pop();
 
-                switch (c){
+            if (Character.isDigit(c)) {
+                stack.push(Character.getNumericValue(c));
+            } else {
+
+
+                if (stack.size() < 2) {
+                    System.out.println("Invalid expression");
+                    return null;
+                }
+
+                int operand1 = stack.pop();
+                int operand2 = stack.pop();
+
+                switch (c) {
                     case '+':
-                        stack.push(operand1+operand2);
+                        stack.push(operand2 + operand1);
                         break;
                     case '-':
-                        stack.push(operand1-operand2);
+                        stack.push(operand2 - operand1);
                         break;
                     case '*':
-                        stack.push(operand1*operand2);
+                        stack.push(operand2 * operand1);
                         break;
                     case '/':
-                        if (operand1==0){
-                            System.out.println("Division by Zero ");
+                        if (operand1 == 0) {
+                            System.out.println("Division by Zero");
                             return null;
                         }
-                        stack.push(operand1/operand2);
+                        stack.push(operand2 / operand1);
                         break;
                     case '%':
                         stack.push(operand2 % operand1);
                         break;
                     default:
-                        System.out.println("Invalid operator ");
+                        System.out.println("Invalid operator");
                         stack.clear();
                         return null;
-
-
-
                 }
             }
         }
         return stack.pop();
-
     }
 }
