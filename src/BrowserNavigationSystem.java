@@ -39,6 +39,9 @@ public class BrowserNavigationSystem {
         System.out.println("Go Back  : " + currentPage);
 
     }
-    //// go forward to next page
+    // go forward to next page
+    static void goForward() {
+
+    }
 
 }
