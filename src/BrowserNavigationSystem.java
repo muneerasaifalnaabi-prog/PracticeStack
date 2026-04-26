@@ -35,6 +35,7 @@ public class BrowserNavigationSystem {
             return;
         }
         forward.push(currentPage);
+        currentPage = back.pop();
 
     }
 }
