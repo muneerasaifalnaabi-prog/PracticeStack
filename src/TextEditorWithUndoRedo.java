@@ -3,13 +3,15 @@ import java.util.Stack;
 public class TextEditorWithUndoRedo {
     static  Stack<String> undo = new Stack<>();
     static   Stack<String> redo = new Stack<>();
-    String currentState ="";
+    static String currentState ="";
+    static int max=10;
+
     public static void main(String[] args) {
 
 
     }
     public  static void type(String text ){
-
+            //edge case :
 
         undo.push(text);
         currentState+=text;
