@@ -1,5 +1,4 @@
 import java.util.Stack;
-import java.util.NoSuchElementException;
 
 public class QueueUsingTwoStacks {
      static Stack<T> input =new Stack<>();
@@ -10,7 +9,22 @@ public class QueueUsingTwoStacks {
     }
     public <T> void enqueue(T element){
         input.push(element);
-        so
+        System.out.println("Enqueued: " + element);
+
+    }
+    public <T> T dequeue() {
+        if (input.isEmpty()) {
+
+        }
+        return output.pop();
+    }
+    public static boolean isEmpty() {
+        return input.isEmpty() && output.isEmpty();
+    }
+    public static int size() {
+        return input.size() + output.size();
+    }
+
 
     }
 }
