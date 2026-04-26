@@ -3,10 +3,41 @@ import java.util.Stack;
 public class NextGreaterElementFinder {
     public static void main(String[] args) {
 
+        // Test arrays
+        int[][] arrays = {
+                {4, 5, 2, 25, 7, 8},
+                {13, 7, 6, 12},
+                {5, 4, 3, 2, 1},
+                {1, 2, 3, 4, 5},
+                {42},
+                {}
+        };
+
+        String[] labels = {
+                "Mixed", "Classic", "Descending",
+                "Ascending", "Single", "Empty"
+        };
+
+        for (int i = 0; i < arrays.length; i++) {
+            System.out.println("--- Test: " + labels[i] + " ---");
+            int[] arr = arrays[i];
+
+            if (arr.length == 0) {
+                System.out.println("Empty array, skipping.\n");
+                continue;
+            }
+
+            showResults(arr, findNextGreaterElement(arr),         "Next Greater");
+            showResults(arr, findNextSmallerElement(arr),         "Next Smaller");
+            showResults(arr, findNextGreaterElementCircular(arr), "Circular NGE");
+            System.out.println();
+        }
+
     }
     public static int[] findNextGreaterElement(int[] arr) {
         int[] result = new int[arr.length];
         Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < arr.length; i++) result[i] = -1;
         // While current element is greater than what the top index holds,
         for (int i = 0; i < arr.length; i++) {
             while (!stack.isEmpty() && arr[i] > stack.peek()) {
@@ -21,8 +52,8 @@ public class NextGreaterElementFinder {
     }
     public static int[] findNextGreaterElementCircular(int[] arr) {
         int[] result = new int[arr.length];
-
         Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < arr.length; i++) result[i] = -1;
 
         for (int i = 0; i < 2 * arr.length; i++) {
             int cur = arr[i % arr.length];     // modulo wraps index around
@@ -78,4 +109,4 @@ public class NextGreaterElementFinder {
 
 }
 
-}
+
