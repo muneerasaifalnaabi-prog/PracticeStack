@@ -20,5 +20,6 @@ public class BrowserNavigationSystem {
             back.push(currentPage);
 
         }
+        farwared.clear();
     }
 }
