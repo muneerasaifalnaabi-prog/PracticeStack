@@ -12,10 +12,13 @@ public class TextEditorWithUndoRedo {
     }
     public  static void type(String text ){
             //edge case :
-
+        if (undo.size()>=max){
+            System.out.println("Undo limited reached");
+            undo.remove(0);
+        }
         undo.push(text);
         currentState+=text;
-        redo.clear();
+
 
     }
     public  static void undo(){
