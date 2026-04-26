@@ -41,6 +41,10 @@ public class BrowserNavigationSystem {
     }
     // go forward to next page
     static void goForward() {
+        //edge case when  nothing to go forward to
+        if (forward.isEmpty()) {
+
+        }
 
     }
 
