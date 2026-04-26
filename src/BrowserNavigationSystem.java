@@ -59,12 +59,12 @@ public class BrowserNavigationSystem {
         //edge case when  nothing to go forward to
         if (forward.isEmpty()) {
             System.out.println("Cannot go forward - no forward history");
+            return;
 
         }
          // push current page to back stack
         back.push(currentPage);
          // pop last page
-        currentPage = forward.pop();
         currentPage = forward.pop();
         System.out.println("Go Forward : " + currentPage);
 
