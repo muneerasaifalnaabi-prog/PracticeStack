@@ -8,10 +8,31 @@ public class TextEditorWithUndoRedo {
 
     public static void main(String[] args) {
 
+        type("Java ");
+        display();
 
+        type(" Programming ");
+        display();
 
+        type("!");
+        display();
 
+        undo();
+        display();
+
+        undo();
+        display();
+
+        redo();
+        display();
+
+        type(" Java");
+        display();
+
+        undo();
+        display();
     }
+
     public  static void type(String text ){
             //edge case :
         if (undo.size()>=max){
@@ -32,7 +53,7 @@ public class TextEditorWithUndoRedo {
             currentState = undo.pop();
         }
     }
-    private void redo() {
+    public  static void redo() {
         if (!redo.isEmpty()) {
             undo.push(currentState);
             currentState = redo.pop();
