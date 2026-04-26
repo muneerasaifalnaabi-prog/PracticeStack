@@ -17,6 +17,7 @@ public class BrowserNavigationSystem {
 
         }
         if (!currentPage.isEmpty()){
+            back.push(currentPage);
 
         }
     }
