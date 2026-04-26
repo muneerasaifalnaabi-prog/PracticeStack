@@ -37,8 +37,20 @@ public class PostFixEvaluator {
                         stack.push(operand1*operand2);
                         break;
                     case '/':
-                        stack.push(operand1*operand2);
+                        if (operand1==0){
+                            System.out.println("Division by Zero ");
+                            return null;
+                        }
+                        stack.push(operand1/operand2);
                         break;
+                    case '%':
+                        stack.push(operand2 % operand1);
+                        break;
+                    default:
+                        System.out.println("Invalid operator ");
+                        stack.clear();
+                        return null;
+
 
 
                 }
