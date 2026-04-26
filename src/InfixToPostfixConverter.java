@@ -31,6 +31,10 @@ public class InfixToPostfixConverter {
             while (!stack.isEmpty() && stack.peek() != '(') {
                 postfix += stack.pop() + " ";
             }
+                // pop the open parenthesis
+                if (!stack.isEmpty()) {
+                    stack.pop();
+                }
         }
 
 
