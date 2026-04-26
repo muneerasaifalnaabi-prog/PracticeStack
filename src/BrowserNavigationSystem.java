@@ -30,6 +30,10 @@ public class BrowserNavigationSystem {
     }
     public static void goBack(){
         // edge case when  nothing to go back to
+        if (back.isEmpty()) {
+            System.out.println("Cannot go back - no history");
+            return;
+        }
 
 
     }
