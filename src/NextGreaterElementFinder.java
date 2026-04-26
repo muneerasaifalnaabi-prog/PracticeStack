@@ -68,6 +68,14 @@ public class NextGreaterElementFinder {
             }
         }
         return result;
+    }
+    static void showResults(int[] arr, int[] result, String label) {
+        System.out.print(label + ": ");
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + "→" + result[i] + "  ");
+        System.out.println();
+    }
 
+}
 
 }
