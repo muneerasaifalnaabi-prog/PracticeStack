@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class BrowserNavigationSystem {
     static Stack<String> back=new Stack<>();
-    static Stack<String> farwared=new Stack<>();
+    static Stack<String> forward=new Stack<>();
     static String currentPage="";
     static int  max=10;
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class BrowserNavigationSystem {
 
         }
         //clear forwared stack when visiting new pages
-        farwared.clear();
+        forward.clear();
         //set new cuurent page
         currentPage = url;
         System.out.println("Visited  : " + url);
@@ -34,7 +34,7 @@ public class BrowserNavigationSystem {
             System.out.println("Cannot go back - no history");
             return;
         }
-
+        forward.push(currentPage);
 
     }
 }
