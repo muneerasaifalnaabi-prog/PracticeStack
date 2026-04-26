@@ -27,6 +27,10 @@ public class InfixToPostfixConverter {
                 stack.push(c);
 
             }
+            else if (c == ')') {
+            while (!stack.isEmpty() && stack.peek() != '(') {
+                postfix += stack.pop() + " ";
+            }
         }
 
 
