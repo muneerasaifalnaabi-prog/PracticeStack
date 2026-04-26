@@ -23,5 +23,9 @@ public class BrowserNavigationSystem {
         //clear forwared stack when visiting new pages
         farwared.clear();
         //set new cuurent page
+        currentPage = url;
+        System.out.println("Visited  : " + url);
+
+
     }
 }
