@@ -43,8 +43,10 @@ public class BrowserNavigationSystem {
     static void goForward() {
         //edge case when  nothing to go forward to
         if (forward.isEmpty()) {
+            System.out.println("Cannot go forward - no forward history");
 
         }
+
 
     }
 
