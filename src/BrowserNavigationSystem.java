@@ -18,6 +18,10 @@ public class BrowserNavigationSystem {
         goForward();
         visitPage("stackoverflow.com");
 
+        goForward();
+        goBack();
+        showHistory();
+
 
     }
     static  void visitPage(String url){
