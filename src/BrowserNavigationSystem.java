@@ -1,10 +1,11 @@
 import java.util.Stack;
 
 public class BrowserNavigationSystem {
-    static Stack<String> back=new Stack<>();
-    static Stack<String> forward=new Stack<>();
-    static String currentPage="";
-    static int  max=10;
+    static Stack<String> back = new Stack<>();
+    static Stack<String> forward = new Stack<>();
+    static String currentPage = "";
+    static int max = 10;
+
     public static void main(String[] args) {
 
         visitPage("Codline.om");
@@ -24,14 +25,15 @@ public class BrowserNavigationSystem {
 
 
     }
-    static  void visitPage(String url){
+
+    static void visitPage(String url) {
         //limit back history to max only
-        if (back.size()>=max){
+        if (back.size() >= max) {
             System.out.println("History limit reached ");
             back.remove(0);
 
         }
-        if (!currentPage.isEmpty()){
+        if (!currentPage.isEmpty()) {
             back.push(currentPage);
 
         }
@@ -43,7 +45,8 @@ public class BrowserNavigationSystem {
 
 
     }
-    public static void goBack(){
+
+    public static void goBack() {
         // edge case when  nothing to go back to
         if (back.isEmpty()) {
             System.out.println("Cannot go back - no history");
@@ -54,6 +57,7 @@ public class BrowserNavigationSystem {
         System.out.println("Go Back  : " + currentPage);
 
     }
+
     // go forward to next page
     static void goForward() {
         //edge case when  nothing to go forward to
@@ -62,20 +66,22 @@ public class BrowserNavigationSystem {
             return;
 
         }
-         // push current page to back stack
+        // push current page to back stack
         back.push(currentPage);
-         // pop last page
+        // pop last page
         currentPage = forward.pop();
         System.out.println("Go Forward : " + currentPage);
 
     }
+
     public static void showCurrentPage() {
         System.out.println("Current Page : " + currentPage);
         System.out.println("Back         : " + back);
         System.out.println("Forward      : " + forward);
 
     }
-   public static void showHistory() {
+
+    public static void showHistory() {
         System.out.println("Back Stack    : " + back);
         System.out.println("Current Page  : " + currentPage);
         System.out.println("Forward Stack : " + forward);
