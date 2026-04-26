@@ -9,6 +9,8 @@ public class TextEditorWithUndoRedo {
     public static void main(String[] args) {
 
 
+
+
     }
     public  static void type(String text ){
             //edge case :
@@ -35,6 +37,12 @@ public class TextEditorWithUndoRedo {
             undo.push(currentState);
             currentState = redo.pop();
         }
+
+    }
+    public static void display() {
+        System.out.println("Current Text : " + currentState);
+        System.out.println("Undo Stack   : " + undo);
+        System.out.println("Redo Stack   : " + redo);
     }
 
 
