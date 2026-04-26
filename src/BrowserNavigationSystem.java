@@ -22,5 +22,6 @@ public class BrowserNavigationSystem {
         }
         //clear forwared stack when visiting new pages
         farwared.clear();
+        //set new cuurent page
     }
 }
