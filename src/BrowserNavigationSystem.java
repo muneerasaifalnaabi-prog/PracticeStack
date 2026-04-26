@@ -36,6 +36,10 @@ public class BrowserNavigationSystem {
         }
         forward.push(currentPage);
         currentPage = back.pop();
+        System.out.println("Go Back  : " + currentPage);
+
+
+
 
     }
 }
