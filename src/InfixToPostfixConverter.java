@@ -13,6 +13,12 @@ public class InfixToPostfixConverter {
             System.out.println("Empty Expression ");
             return null;
         }
+        for (int i=0;i<infix.length();i++){
+            char c =infix.charAt(i);
+
+            if (c==' ')
+        }
+
 
 
 
