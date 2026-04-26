@@ -10,9 +10,13 @@ public class BrowserNavigationSystem {
         visitPage("Codline.om");
         visitPage("linkedIn.com");
         visitPage("gitHub.com");
+        visitPage("z.com");
+        visitPage("reddit.com");
 
         goBack();
         goBack();
+        goForward();
+        visitPage("stackoverflow.com");
 
 
     }
