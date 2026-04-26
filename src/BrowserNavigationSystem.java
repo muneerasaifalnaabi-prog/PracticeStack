@@ -50,10 +50,20 @@ public class BrowserNavigationSystem {
         back.push(currentPage);
          // pop last page
         currentPage = forward.pop();
+        currentPage = forward.pop();
+        System.out.println("Go Forward : " + currentPage);
 
+    }
+    public static void showCurrentPage() {
+        System.out.println("Current Page : " + currentPage);
+        System.out.println("Back         : " + back);
+        System.out.println("Forward      : " + forward);
 
-
-
+    }
+   public static void showHistory() {
+        System.out.println("Back Stack    : " + back);
+        System.out.println("Current Page  : " + currentPage);
+        System.out.println("Forward Stack : " + forward);
 
     }
 
