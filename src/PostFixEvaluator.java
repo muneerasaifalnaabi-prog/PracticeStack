@@ -7,6 +7,15 @@ public class PostFixEvaluator {
     }
     public static Integer evaluatePostfix(String expression){
         Stack<Integer> stack=new Stack<>();
+        //Edge Case
+        if (expression == null || expression.isEmpty()) {
+            System.out.println("Empty expression");
+            return null;
+        }
+        if (stack.size() < 2) {
+            System.out.println("Invalid expression");
+            return null;
+        }
         for (int i=0 ;i<expression.length();i++){
             char c =expression.charAt(i);
 
