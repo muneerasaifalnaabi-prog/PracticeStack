@@ -4,7 +4,10 @@ public class InfixToPostfixConverter {
     public static void main(String[] args) {
         String e1 = "3 + 4";
         String e2 = "3 + 4 * 2";
-        String e3 = "( 3 + 4 ) * 2";
+        String e3 = "2 ^ 3 + 1";
+        System.out.println(infixToPostfix(e1));
+        System.out.println(infixToPostfix(e2));
+        System.out.println(infixToPostfix(e3));
 
 
     }
