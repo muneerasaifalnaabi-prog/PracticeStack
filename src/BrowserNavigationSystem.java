@@ -48,6 +48,8 @@ public class BrowserNavigationSystem {
         }
          // push current page to back stack
         back.push(currentPage);
+         // pop last page
+        currentPage = forward.pop();
 
 
 
