@@ -20,7 +20,6 @@ public class NQueensSolver {
         solveNQueens(3);
         displayAllSolutions(3);
 
-
     }
     public static void solveNQueens(int n) {
         if (n == 0) {
