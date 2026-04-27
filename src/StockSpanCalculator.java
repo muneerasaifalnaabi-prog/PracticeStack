@@ -48,6 +48,10 @@ public class StockSpanCalculator {
 
     }
     public void displayResults(int[] prices, int[] spans) {
+        System.out.println("Day Price Span");
+        System.out.println("--- ----- ----");
+
+
 
     }
 }
