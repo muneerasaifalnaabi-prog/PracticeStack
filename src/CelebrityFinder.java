@@ -12,11 +12,11 @@ public class CelebrityFinder {
 
 
 
-    public static int findCelebrity(int n ){
-        Stack<Integer> stack =new Stack<>();
+    public static int findCelebrity(int n ) {
+        Stack<Integer> stack = new Stack<>();
 
         //push all indices onto stack
-        for (int i=0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             stack.push(n);
         }
         System.out.println("Initial stack: " + stack);
@@ -36,7 +36,21 @@ public class CelebrityFinder {
         int candidate = stack.pop();
         System.out.println("Candidate: " + candidate);
 
+        for (int i = 0; i < n; i++) {
+            if (i == candidate) continue;
 
+            if (knows(candidate, i)) {
+                System.out.println("Failed: " + candidate + " knows " + i);
+                return -1;
+            }
+
+            if (!knows(i, candidate)) {
+                System.out.println("Failed: " + i + " does not know " + candidate);
+                return -1;
+            }
+        }
+        return candidate ;
+    }
 
 
     }
