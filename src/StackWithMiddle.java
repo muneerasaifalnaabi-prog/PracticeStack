@@ -77,6 +77,35 @@ public class StackWithMiddle {
         return mid.data;
 
     }
+    public static int deleteMiddle() {
+        if (mid == null) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        int deleted = mid.data;
+        if (mid.prev != null) {
+            mid.prev.next = mid.next;
+        }
+        if (mid.next != null) {
+            mid.next.prev = mid.prev;
+        }
+        Node oldMid = mid;
+        if (size % 2 == 1) {
+            mid = mid.next;
+        }
+        else {
+            mid = mid.prev;
+        }
+        size--;
+
+        if (size == 0) {
+            mid = null;
+            top = null;
+        }
+
+        return deleted;
+
+    }
 
 
 
