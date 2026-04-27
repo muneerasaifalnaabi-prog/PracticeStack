@@ -7,8 +7,12 @@ public class StackSorter {
     public static void sortStack(Stack<Integer> stack) {
         Stack<Integer> temp = new Stack<>();
         while (!stack.isEmpty()) {
+            //pick the top element
             int curr=stack.pop();
-
+            //move element from temp to back to original stack if it greater than current  value
+            while (!temp.isEmpty() && temp.peek() > curr) {
+                stack.push(temp.pop());
+            }
 
         }
 
