@@ -11,6 +11,7 @@ public class CelebrityFinder {
         for (int i=0;i<n;i++){
             stack.push(n);
         }
+        System.out.println("Initial stack: " + stack);
     }
 
 }
