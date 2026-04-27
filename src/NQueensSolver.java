@@ -80,6 +80,9 @@ public class NQueensSolver {
 
     private static boolean isSafe(Position pos, Stack<Position> queens) {
         for (Position existing : queens) {
+            if (existing.col == pos.col) {
+                return false;
+            }
 
         }
     }
