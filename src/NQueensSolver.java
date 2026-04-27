@@ -23,8 +23,22 @@ public class NQueensSolver {
         int row = 0;
         int col = 0;
         int solutionCount = 0;
+        while (true) {
+            boolean found = false;
+            while (col < n) {
+                Position pos = new Position(row, col);
+                if (isSafe(pos, queens)) {
+                    found = true;
+                    break;
+                }
+                col++;
+        }
+
 
     }
 
 
 }
+
+    private static boolean isSafe(Position pos, Stack<Position> queens) {
+    }
