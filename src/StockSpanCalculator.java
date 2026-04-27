@@ -9,8 +9,8 @@ public class StockSpanCalculator {
         calculator.visualizeSpans(prices, spans);
 
         int[] bruteSpans = calculator.calculateSpanBruteForce(prices);
-
-
+        calculator.displayResults(prices, bruteSpans);
+        calculator.visualizeSpans(prices, bruteSpans);
 
     }
 
