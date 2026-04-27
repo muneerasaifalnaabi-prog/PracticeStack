@@ -8,6 +8,8 @@ public class StockSpanCalculator {
         calculator.displayResults(prices, spans);
         calculator.visualizeSpans(prices, spans);
 
+        int[] bruteSpans = calculator.calculateSpanBruteForce(prices);
+
 
 
     }
