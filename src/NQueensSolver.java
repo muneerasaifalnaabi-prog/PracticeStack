@@ -35,6 +35,7 @@ public class NQueensSolver {
                 col++;
         }
             if (found) {
+                // Place queen and move to next row
                 queens.push(new Position(row, col));
             }
 
