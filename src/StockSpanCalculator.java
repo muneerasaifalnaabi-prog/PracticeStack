@@ -5,6 +5,8 @@ public class StockSpanCalculator {
         int[] prices = {100, 80, 60, 70, 60, 75, 85};
         int[] spans = calculateSpan(prices);
         StockSpanCalculator calculator = new StockSpanCalculator();
+        calculator.displayResults(prices, spans);
+        calculator.visualizeSpans(prices, spans);
 
 
 
