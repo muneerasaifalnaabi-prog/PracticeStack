@@ -4,6 +4,7 @@ public class StockSpanCalculator {
     }
     // Simple O(n) stack method
     public static int[] calculateSpan(int[] prices) {
+        int[] span = new int[prices.length];
 
     }
 }
