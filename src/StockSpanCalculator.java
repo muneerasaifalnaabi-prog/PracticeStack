@@ -50,8 +50,18 @@ public class StockSpanCalculator {
     public void displayResults(int[] prices, int[] spans) {
         System.out.println("Day Price Span");
         System.out.println("--- ----- ----");
-
+        int maxSpan = 0, totalSpan = 0;
+        for (int i = 0; i < prices.length; i++) {
+            System.out.println(i + "  " + prices[i] + "  " + spans[i]);
+            if (spans[i] > maxSpan) maxSpan = spans[i];
+            totalSpan += spans[i];
+        }
+        System.out.println("Max span: " + maxSpan);
+        if (prices.length > 0) {
+            System.out.println("Avg span: " + (totalSpan * 1.0 / prices.length));
+        }
+    }
 
 
     }
-}
+
