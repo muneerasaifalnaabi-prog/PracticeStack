@@ -23,6 +23,7 @@ public class StackSorter {
     }
     public static void sortStackRecursive(Stack<Integer> stack) {
         if (stack.isEmpty()) return;
+        int top = stack.pop();
 
 
     }
