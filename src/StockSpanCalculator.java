@@ -47,4 +47,7 @@ public class StockSpanCalculator {
         return spans;
 
     }
+    public void displayResults(int[] prices, int[] spans) {
+
+    }
 }
