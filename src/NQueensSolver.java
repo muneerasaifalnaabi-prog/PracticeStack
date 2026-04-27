@@ -87,6 +87,7 @@ public class NQueensSolver {
                 return false;
             }
         }
+        return true;
     }
 
     }
