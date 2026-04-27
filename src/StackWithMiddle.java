@@ -45,6 +45,22 @@ public class StackWithMiddle {
         if (top == null) {
             System.out.println("Stack is empty");
             return -1;
+        }
+        int popped = top.data;
+        top = top.next;
+
+        if (top != null) {
+            top.prev = null;
+        }
+
+        size--;
+        // Update mid pointer
+        if (size == 0) {
+            mid = null;
+        } else if (size % 2 == 0) {
+            mid = mid.next;
+        }
+        return popped;
     }
 
 }
