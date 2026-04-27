@@ -1,5 +1,9 @@
+
 public class StackWithMiddle {
     //node class
+    static Node top  = null;
+    static Node mid  = null;
+    static int  size = 0;
     static class Node {
         int  data;
         Node next;
@@ -11,9 +15,7 @@ public class StackWithMiddle {
             this.prev = null;
         }
         //variables
-        static Node top  = null;
-        static Node mid  = null;
-        static int  size = 0;
+
 
     }
     public static void main(String[] args) {
@@ -22,7 +24,20 @@ public class StackWithMiddle {
     public static void push(int value) {
         Node newNode = new Node(value);
         // Link new node to current top
+        newNode.next = top;
+        if (top != null) {
+            top.prev = newNode;
+        }
 
+        top = newNode;
+        size++;
+        // Update mid pointer
+        if (size == 1) {
+            mid = top;
+        } else if (size % 2 == 1) {
+            mid = mid.prev;
+        }
+        System.out.println("Push:" + value + " ");
 
     }
 
