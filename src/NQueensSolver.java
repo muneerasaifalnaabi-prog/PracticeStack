@@ -37,6 +37,12 @@ public class NQueensSolver {
             if (found) {
                 // Place queen and move to next row
                 queens.push(new Position(row, col));
+                //Print stack after each placement
+                System.out.print("Placed queen at (" + row + "," + col + ")  Stack: ");
+                for (Position p : queens) {
+                    System.out.print("(" + p.row + "," + p.col + ") ");
+                }
+
             }
 
             }
