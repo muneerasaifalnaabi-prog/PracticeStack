@@ -5,12 +5,14 @@ public class StockSpanCalculator {
             int[] prices = {100, 80, 60, 70, 60, 75, 85};
 
         int[] spans = calculateSpan(prices);
-
+        System.out.println("Day  Price  Span");
+        System.out.println("---  -----  ----");
         for (int i = 0; i < prices.length; i++) {
             System.out.println(i + "  " + prices[i] + "  " + spans[i]);
         }
 
     }
+
     // Simple O(n) stack method
     public static int[] calculateSpan(int[] prices) {
         int[] span = new int[prices.length];
