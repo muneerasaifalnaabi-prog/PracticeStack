@@ -4,6 +4,13 @@ public class MinStack {
     static Stack<Integer> mainStack =new Stack<>();
     static Stack<Integer> minStack =new Stack<>();
     public static void main(String[] args) {
+        push(5);
+        push(3);
+        push(10);
+        push(30);
+        push(2);
+        display();
+        System.out.println("");
 
     }
     public static void  push(int value){
@@ -34,4 +41,4 @@ public class MinStack {
     }
 
 
-}
+
