@@ -27,6 +27,9 @@ public class MinStack {
         return minStack.peek();
     }
     public static void display() {
+        System.out.println("mainStack: " + mainStack);
+        System.out.println("minStack:  " + minStack);
+    }
 
     }
 
