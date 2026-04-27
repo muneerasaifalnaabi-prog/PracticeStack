@@ -91,6 +91,12 @@ public class NQueensSolver {
     }
     public static void displayBoard(Stack<Position> queens, int n) {
         char[][] board = new char[n][n];
+        // Fill board with dots
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = '.';
+            }
+        }
 
     }
 
