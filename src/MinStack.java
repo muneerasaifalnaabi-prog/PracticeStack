@@ -17,6 +17,11 @@ public class MinStack {
         if (pop ==minStack.peek()){
             minStack.pop();
         }
+    }
+    public static Integer GetMin(){
+        return minStack.peek();
+    }
+    public static void display() {
 
     }
 
