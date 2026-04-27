@@ -55,7 +55,7 @@ public class CelebrityFinder {
                 {1, 0, 1},
                 {1, 1, 0}
         };
-        System.out.println("=== Test 5 - All know each other ===");
+        System.out.println(" Test 5 - All know each other");
         displayMatrix();
         System.out.println("Result: " + findCelebrity(matrix.length));
         System.out.println();
