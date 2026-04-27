@@ -83,7 +83,9 @@ public class NQueensSolver {
             if (existing.col == pos.col) {
                 return false;
             }
-
+            if (Math.abs(existing.row - pos.row) == Math.abs(existing.col - pos.col)) {
+                return false;
+            }
         }
     }
 
