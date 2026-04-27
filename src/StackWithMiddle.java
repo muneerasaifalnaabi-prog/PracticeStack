@@ -112,6 +112,14 @@ public class StackWithMiddle {
     public static  int size(){
         return size;
     }
+    public static  void display(){
+        Node current = top;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println("| mid=" + (mid == null ? "null" : mid.data));
+    }
 
 
 
