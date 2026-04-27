@@ -49,17 +49,36 @@ public class NQueensSolver {
 
                     //Backtrack to find next solution
                     Position last = queens.pop();
+                    row = last.row;
+                    col = last.col + 1;
+
+                } else {
+                    // Move to next row
+                    row++;
+                    col = 0;
+                }
+
+            } else {
+                // No safe column found → backtrack
+                if (queens.isEmpty()) {
+                    break;
+                }
+                Position last = queens.pop();
+                row = last.row;
+                col = last.col + 1;
 
 
             }
 
             }
-
-
+        System.out.println("Total Solutions for N=" + n + ": " + solutionCount);
     }
 
 
-}
+
+
 
     private static boolean isSafe(Position pos, Stack<Position> queens) {
+
     }
+
