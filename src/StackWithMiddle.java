@@ -34,7 +34,11 @@ public class StackWithMiddle {
         // GetMiddle
         System.out.println("Middle      : " + getMiddle());
         System.out.println();
-
+        // Pop
+        System.out.println("Pop         : " + pop());
+        display();
+        System.out.println("Middle      : " + getMiddle());
+        System.out.println();
 
     }
     public static void push(int value) {
