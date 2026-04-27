@@ -42,6 +42,10 @@ public class NQueensSolver {
                 for (Position p : queens) {
                     System.out.print("(" + p.row + "," + p.col + ") ");
                 }
+                //if all queens placed  solution founde
+                if (row == n - 1) {
+                    solutionCount++;
+                    System.out.println("Solution " + solutionCount + ":");
 
             }
 
