@@ -69,6 +69,13 @@ public class StackWithMiddle {
         }
         return top.data;
     }
+    public static int getMiddle() {
+        if (mid == null) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+
+    }
 
 
 }
