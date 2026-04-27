@@ -24,7 +24,15 @@ public class StackSorter {
     public static void sortStackRecursive(Stack<Integer> stack) {
         if (stack.isEmpty()) return;
         int top = stack.pop();
+        sortStackRecursive(stack);
+        insertInSortedOrder(stack, top);
 
+    }
 
+    private static void insertInSortedOrder(Stack<Integer> stack, int top) {
+        if (stack.isEmpty() || top >= stack.peek()) {
+            stack.push(top);
+            return;
+        }
     }
 }
