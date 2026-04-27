@@ -12,12 +12,17 @@ public class MinStack {
             minStack.push(value);
         }
     }
-    public static void pop(int value){
-       int pop= mainStack.pop();
-        if (pop ==minStack.peek()){
-            minStack.pop();
+    public static int pop() {
+            if (mainStack.isEmpty()) {
+                System.out.println("Stack is empty — cannot pop.");
+                return -1;
+            }
+            int popped = mainStack.pop();
+            if (popped == minStack.peek()) {
+                minStack.pop();
+            }
+            return popped;
         }
-    }
     public static Integer GetMin(){
         return minStack.peek();
     }
