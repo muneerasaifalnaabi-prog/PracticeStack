@@ -15,10 +15,11 @@ public class StackWithMiddle {
         static Node mid  = null;
         static int  size = 0;
 
-
-
     }
     public static void main(String[] args) {
+
+    }
+    public static void push(int value) {
 
     }
 
