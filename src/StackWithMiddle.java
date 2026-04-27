@@ -62,5 +62,8 @@ public class StackWithMiddle {
         }
         return popped;
     }
+    public static int peek() {
+
+    }
 
 }
