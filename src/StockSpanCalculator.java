@@ -6,6 +6,10 @@ public class StockSpanCalculator {
 
         int[] spans = calculateSpan(prices);
 
+        for (int i = 0; i < prices.length; i++) {
+            System.out.println(i + "  " + prices[i] + "  " + spans[i]);
+        }
+
     }
     // Simple O(n) stack method
     public static int[] calculateSpan(int[] prices) {
