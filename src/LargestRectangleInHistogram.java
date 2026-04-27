@@ -22,11 +22,12 @@ public class LargestRectangleInHistogram {
                     maxArea = area;
                 }
             }
+            stack.push(i);
         }
-
-
-
-
+        return maxArea;
         }
+    public static int calculateArea(int[] heights, int start, int end, int height) {
+
+    }
 
 }
