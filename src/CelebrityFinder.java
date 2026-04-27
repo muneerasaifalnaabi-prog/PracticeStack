@@ -25,6 +25,15 @@ public class CelebrityFinder {
             int a = stack.pop();
             int b = stack.pop();
 
+            if (knows(a,b)){
+                stack.push(b);
+                System.out.println(a + " Knows " + b);
+            }
+            else{
+                stack.push(a);
+                System.out.println(a + "Does not know "+ b );
+            }
+
     }
 
 
