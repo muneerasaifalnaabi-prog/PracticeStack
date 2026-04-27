@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class NQueensSolver {
     //Position class to store row and column
     static class Position {
@@ -17,6 +19,10 @@ public class NQueensSolver {
             System.out.println("No board for N=0");
             return;
         }
+        Stack<Position> queens = new Stack<>();
+        int row = 0;
+        int col = 0;
+        int solutionCount = 0;
 
     }
 
