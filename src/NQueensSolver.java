@@ -47,6 +47,9 @@ public class NQueensSolver {
                     solutionCount++;
                     System.out.println("Solution " + solutionCount + ":");
 
+                    //Backtrack to find next solution
+
+
             }
 
             }
