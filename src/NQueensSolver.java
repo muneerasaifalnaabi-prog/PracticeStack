@@ -34,6 +34,8 @@ public class NQueensSolver {
                 col++;
         }
             if (found) {
+                queens.push(new Position(row, col));
+            }
 
             }
 
