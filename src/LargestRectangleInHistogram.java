@@ -60,5 +60,8 @@ public class LargestRectangleInHistogram {
         }
 
     }
+    public static void displayResult(int[] heights, int maxArea) {
+
+    }
 
 }
