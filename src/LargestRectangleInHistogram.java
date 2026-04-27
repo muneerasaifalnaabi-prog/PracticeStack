@@ -17,6 +17,10 @@ public class LargestRectangleInHistogram {
                 int h = heights[stack.pop()];
                 int width = stack.isEmpty() ? i : i - stack.peek() - 1;
                 int area  = h * width;
+                System.out.println("  height=" + h + "  width=" + width + "  area=" + area);
+                if (area > maxArea) {
+                    maxArea = area;
+                }
             }
         }
 
