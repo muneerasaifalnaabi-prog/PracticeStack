@@ -97,6 +97,12 @@ public class NQueensSolver {
                 board[i][j] = '.';
             }
         }
+        // Place queens on board
+        for (Position p : queens) {
+            board[p.row][p.col] = 'Q';
+        }
+
+
 
     }
 
