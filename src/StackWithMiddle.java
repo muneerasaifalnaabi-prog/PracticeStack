@@ -12,6 +12,9 @@ public class StackWithMiddle {
         }
         //variables
         static Node top  = null;
+        static Node mid  = null;
+        static int  size = 0;
+
 
 
     }
