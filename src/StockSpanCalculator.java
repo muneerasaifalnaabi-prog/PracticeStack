@@ -61,6 +61,10 @@ public class StockSpanCalculator {
             System.out.println("Avg span: " + (totalSpan * 1.0 / prices.length));
         }
     }
+    // Simple visualization
+    public void visualizeSpans(int[] prices, int[] spans) {
+
+    }
 
 
     }
