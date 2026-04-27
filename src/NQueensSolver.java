@@ -90,6 +90,7 @@ public class NQueensSolver {
         return true;
     }
     public static void displayBoard(Stack<Position> queens, int n) {
+        char[][] board = new char[n][n];
 
     }
 
