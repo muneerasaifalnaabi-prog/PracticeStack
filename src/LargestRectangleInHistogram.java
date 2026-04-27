@@ -30,6 +30,8 @@ public class LargestRectangleInHistogram {
         int width = end - start + 1;
         return width * height;
     }
+    public static int bruteForceLargestRectangle(int[] heights) {
+        int maxArea = 0;
 
     }
 
