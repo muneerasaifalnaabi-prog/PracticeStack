@@ -13,8 +13,15 @@ public class StackSorter {
             while (!temp.isEmpty() && temp.peek() > curr) {
                 stack.push(temp.pop());
             }
+            temp.push(curr);
 
         }
+        while (!temp.isEmpty()) {
+            stack.push(temp.pop());
+        }
+
+    }
+    public static void sortStackRecursive(Stack<Integer> stack) {
 
     }
 }
