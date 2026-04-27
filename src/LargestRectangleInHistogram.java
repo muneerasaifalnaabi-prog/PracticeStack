@@ -11,9 +11,13 @@ public class LargestRectangleInHistogram {
         if (heights.length == 0) {
             return 0;
         }
+        for (int i = 0; i <= heights.length; i++) {
+            int currentHeight = (i == heights.length) ? 0 : heights[i];
+        }
 
 
 
-    }
+
+        }
 
 }
