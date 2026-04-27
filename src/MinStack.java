@@ -10,7 +10,8 @@ public class MinStack {
         push(30);
         push(2);
         display();
-        System.out.println("");
+        System.out.println("Getmin : "+GetMin());
+        System.out.println("Popped : "+pop());
 
     }
     public static void  push(int value){
