@@ -19,6 +19,20 @@ public class StackWithMiddle {
 
     }
     public static void main(String[] args) {
+        push(10);
+        display();
+        push(20);
+        display();
+        push(30);
+        display();
+        push(40);
+        display();
+        push(50);
+        display();
+        push(60);
+        display();
+
+
 
     }
     public static void push(int value) {
