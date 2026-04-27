@@ -40,5 +40,8 @@ public class StackWithMiddle {
         System.out.println("Push:" + value + " ");
 
     }
+    public static int pop() {
+
+    }
 
 }
