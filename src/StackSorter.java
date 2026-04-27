@@ -5,13 +5,14 @@ public class StackSorter {
         System.out.println("===== Test 1: Normal Unsorted =====");
         Stack<Integer> stack1 = new Stack<>();
         stack1.push(3);
-        stack1.push(1);
+        stack1.push(2);
         stack1.push(4);
         stack1.push(1);
         stack1.push(5);
         System.out.println("Before :");
         displayStack( stack1);
         sortStack(stack1);
+        System.out.println("After :");
         displayStack(stack1);
         System.out.println();
 
