@@ -41,7 +41,10 @@ public class StackWithMiddle {
 
     }
     public static int pop() {
-
+        //when stack is empty
+        if (top == null) {
+            System.out.println("Stack is empty");
+            return -1;
     }
 
 }
