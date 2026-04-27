@@ -24,6 +24,7 @@ public class NQueensSolver {
         int col = 0;
         int solutionCount = 0;
         while (true) {
+            //find a safe column in current row
             boolean found = false;
             while (col < n) {
                 Position pos = new Position(row, col);
