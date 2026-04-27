@@ -101,6 +101,12 @@ public class NQueensSolver {
         for (Position p : queens) {
             board[p.row][p.col] = 'Q';
         }
+        //Print column numbers
+        System.out.print("  ");
+        for (int j = 0; j < n; j++) {
+            System.out.print(j + " ");
+        }
+
 
 
 
