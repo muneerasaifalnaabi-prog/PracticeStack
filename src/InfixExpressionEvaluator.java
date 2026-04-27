@@ -15,8 +15,16 @@ public class InfixExpressionEvaluator {
             }
             if (Character.isDigit(c) ){
                 StringBuilder num = new StringBuilder();
-
+                while (i < expression.length() && Character.isDigit(expression.charAt(i))) {
+                    num.append(expression.charAt(i));
+                    i++;
+                }
+                i--;
+                operandStack.push(Double.parseDouble(num.toString()));
+            } else if (c=='(') {
+                
             }
+
         }
 
     }
