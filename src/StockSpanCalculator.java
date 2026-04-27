@@ -36,6 +36,15 @@ public class StockSpanCalculator {
         }
     public int[] calculateSpanBruteForce(int[] prices) {
         int[] spans = new int[prices.length];
+        for (int i = 0; i < prices.length; i++) {
+            int count = 1;
+            for (int j = i - 1; j >= 0; j--) {
+                if (prices[j] <= prices[i]) count++;
+                else break;
+            }
+            spans[i] = count;
+        }
+        return spans;
 
     }
 }
