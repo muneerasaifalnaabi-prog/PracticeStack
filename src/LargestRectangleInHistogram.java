@@ -2,6 +2,9 @@ import java.util.Stack;
 
 public class LargestRectangleInHistogram {
     public static void main(String[] args) {
+        int[] h1 = {2, 1, 5, 6, 2, 3};
+        displayHistogram(h1);
+        displayResult(h1, findLargestRectangle(h1));
 
     }
 
