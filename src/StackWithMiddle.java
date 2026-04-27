@@ -21,6 +21,7 @@ public class StackWithMiddle {
     }
     public static void push(int value) {
         Node newNode = new Node(value);
+        // Link new node to current top
 
 
     }
