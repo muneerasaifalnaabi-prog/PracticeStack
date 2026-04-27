@@ -20,6 +20,8 @@ public class StackWithMiddle {
 
     }
     public static void push(int value) {
+        Node newNode = new Node(value);
+
 
     }
 
