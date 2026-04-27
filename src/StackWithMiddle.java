@@ -39,6 +39,11 @@ public class StackWithMiddle {
         display();
         System.out.println("Middle      : " + getMiddle());
         System.out.println();
+        // DeleteMiddle
+        System.out.println("DeleteMiddle: " + deleteMiddle());
+        display();
+        System.out.println("Middle      : " + getMiddle());
+        System.out.println();
 
     }
     public static void push(int value) {
