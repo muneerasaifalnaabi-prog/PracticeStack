@@ -106,6 +106,10 @@ public class StackWithMiddle {
         return deleted;
 
     }
+    public  static boolean isEmpty(){
+        return size==0;
+    }
+
 
 
 
