@@ -63,7 +63,10 @@ public class StockSpanCalculator {
     }
     // Simple visualization
     public void visualizeSpans(int[] prices, int[] spans) {
-
+        for (int i = 0; i < prices.length; i++) {
+            String bar = "||||".repeat(spans[i]);
+            System.out.println(i + ": " + bar + " (" + spans[i] + ")");
+        }
     }
 
 
