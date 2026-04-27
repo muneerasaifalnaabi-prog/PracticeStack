@@ -22,7 +22,7 @@ public class MinStack {
     }
     public static int pop() {
             if (mainStack.isEmpty()) {
-                System.out.println("Stack is empty — cannot pop.");
+                System.out.println("Stack is empty cannot pop.");
                 return -1;
             }
             int popped = mainStack.pop();
