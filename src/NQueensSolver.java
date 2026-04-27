@@ -48,6 +48,7 @@ public class NQueensSolver {
                     System.out.println("Solution " + solutionCount + ":");
 
                     //Backtrack to find next solution
+                    Position last = queens.pop();
 
 
             }
