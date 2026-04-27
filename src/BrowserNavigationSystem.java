@@ -43,7 +43,6 @@ public class BrowserNavigationSystem {
         currentPage = url;
         System.out.println("Visited  : " + url);
 
-
     }
 
     public static void goBack() {
@@ -87,5 +86,4 @@ public class BrowserNavigationSystem {
         System.out.println("Forward Stack : " + forward);
 
     }
-
 }
