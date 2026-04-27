@@ -34,5 +34,9 @@ public class StackSorter {
             stack.push(top);
             return;
         }
+        int value = stack.pop();
+        insertInSortedOrder(stack, top);
+        stack.push(top);
     }
+
 }
