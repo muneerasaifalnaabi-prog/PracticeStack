@@ -13,6 +13,9 @@ public class NQueensSolver {
 
     }
     public static void solveNQueens(int n) {
+        if (n == 0) {
+
+        }
 
     }
 
