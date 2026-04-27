@@ -13,9 +13,16 @@ public class StockSpanCalculator {
             while (!stack.isEmpty() && prices[stack.peek()] <= prices[i]) {
                 stack.pop();
             }
+            // Calculate span
+            if (stack.isEmpty()) {
+                span[i] = i + 1;
+            }
+            else {
+                span[i] = i - stack.peek();
+            }
 
-
-
-
+            stack.push(i);
+        }
+        return span;
         }
 }
