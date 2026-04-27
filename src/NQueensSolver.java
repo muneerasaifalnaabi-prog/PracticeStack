@@ -33,6 +33,9 @@ public class NQueensSolver {
                 }
                 col++;
         }
+            if (found) {
+
+            }
 
 
     }
