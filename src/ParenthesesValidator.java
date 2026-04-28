@@ -34,6 +34,8 @@ public class ParenthesesValidator {
                     System.out.println("  CLOSE '" + ch + "'  → stack empty.");
                     return false;
                 }
+                char top = stack.peek();
+                char popped = stack.pop();
             }
 
         }
