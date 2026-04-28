@@ -59,4 +59,5 @@ public class ParenthesesValidator {
         }
         return true;
 
-    }}
+    }
+}
