@@ -17,6 +17,8 @@ public class ParenthesesValidator {
     public static  Boolean  isBalanced(String expression) {
        Stack<Character> stack = new Stack<>();
         System.out.println("Validating " + expression);
+
+        if (!expression.isEmpty())
         for (int i = 0; i < parenthesesValidator.size(); i++) {
             char c = expression.charAt(i);
             if (parenthesesValidator.isEmpty()) {
