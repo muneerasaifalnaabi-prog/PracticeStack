@@ -18,15 +18,13 @@ public class ParenthesesValidator {
        Stack<Character> stack = new Stack<>();
         System.out.println("Validating " + expression);
 
-        if (!expression.isEmpty()){
+        if (expression.isEmpty()){
             System.out.println("Empty String");
             return true;
         }
-        for (int i = 0; i < parenthesesValidator.size(); i++) {
-            char c = expression.charAt(i);
-            if (parenthesesValidator.isEmpty()) {
-                return false;
-            }
+        for (int i = 0; i < expression.length(); i++) {
+            char c= expression.charAt(i);
+
             if (c == '{' || c == '(' || c == '{') {
                 parenthesesValidator.push(String.valueOf(c));
             }
