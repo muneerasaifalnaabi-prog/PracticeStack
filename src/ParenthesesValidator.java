@@ -36,6 +36,20 @@ public class ParenthesesValidator {
                 }
                 char top = stack.peek();
                 char popped = stack.pop();
+                boolean matches = (ch == ')' && popped == '(')
+                        || (ch == ']' && popped == '[')
+                        || (ch == '}' && popped == '{');
+
+                if (matches) {
+                    System.out.println("  POP   '" + popped + "' matched with '" + ch + "'  → stack: " + stack);
+                }
+                else {
+                    System.out.println("  MISMATCH: '" + popped + "' does NOT match '" + ch + "'  → unbalanced!");
+                    return false;
+                }
+                }
+        else{
+                System.out.println("  SKIP  '" + ch + "'  not a bracket");
             }
 
         }
