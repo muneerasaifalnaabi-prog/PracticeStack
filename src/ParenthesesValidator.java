@@ -15,33 +15,22 @@ public class ParenthesesValidator {
 
     }
     public static  Boolean  isBalanced(String expression) {
-       Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<>();
         System.out.println("Validating " + expression);
 
-        if (expression.isEmpty()){
+        if (expression.isEmpty()) {
             System.out.println("Empty String");
             return true;
         }
         for (int i = 0; i < expression.length(); i++) {
-            char c= expression.charAt(i);
+            char ch = expression.charAt(i);
 
-            if (c == '{' || c == '(' || c == '{') {
-                parenthesesValidator.push(String.valueOf(c));
-            }
-            if (c == '}' || c == ')' || c == '}') {
-                parenthesesValidator.push(String.valueOf(c));
-            }
-            char pop = parenthesesValidator.pop();
-            if ((c == ')' && pop != '(') ||
-                    (c == '}' && pop != '{') ||
-                    (c == ']' && pop != '[')) {
-                return false;
-
+            if (ch == '(' || ch == '[' || ch == '{') {
+                stack.push(ch);
+                System.out.println("  PUSH  '" + ch + "'  → stack: " + stack);
 
             }
         }
 
-    }
 
-     */
-}
+    }}
