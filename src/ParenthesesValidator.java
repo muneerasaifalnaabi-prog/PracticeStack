@@ -53,6 +53,10 @@ public class ParenthesesValidator {
             }
 
         }
-
+        if (!stack.isEmpty()) {
+            System.out.println("  Stack NOT empty at end: " + stack + " → unclosed openers!");
+            return false;
+        }
+        return true;
 
     }}
