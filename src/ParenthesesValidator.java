@@ -3,8 +3,18 @@ import java.util.Stack;
 public class ParenthesesValidator {
     public static void main(String[] args) {
         String s1 ="()}}";
+        String s2 ="[(Hi)}}]";
+        String s3 ="{Java :){}";
+        String s4 ="{{()}}";
 
-        System.out.println(s1 +"Is planced ?");
+        System.out.println(s1 +"Is planced ?"+isBalanced(s1));
+        System.out.println("-------------------------------");
+        System.out.println(s2 +"Is planced ?"+isBalanced(s2));
+        System.out.println("-------------------------------");
+        System.out.println(s3 +"Is planced ?"+isBalanced(s3));
+        System.out.println("-------------------------------");
+        System.out.println(s4 +"Is planced ?"+isBalanced(s4));
+
 
 
 
