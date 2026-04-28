@@ -28,8 +28,14 @@ public class ParenthesesValidator {
             if (ch == '(' || ch == '[' || ch == '{') {
                 stack.push(ch);
                 System.out.println("  PUSH  '" + ch + "'  → stack: " + stack);
-
             }
+        else if (ch == ')' || ch == ']' || ch == '}') {
+                if (stack.isEmpty()) {
+                    System.out.println("  CLOSE '" + ch + "'  → stack empty.");
+                    return false;
+                }
+            }
+
         }
 
 
